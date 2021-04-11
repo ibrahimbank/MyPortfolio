@@ -1,0 +1,402 @@
+/* reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #272727;
+  color: #fff;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+header {
+  background: #272727;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+/* navbar */
+.navbar {
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a:hover {
+  color: rgb(128, 0, 0);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* home style */
+main {
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+}
+
+.home {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("IMG_1842.JPG") center top;
+  background-size: cover;
+}
+
+.home .myf-name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid;
+  color: tan;
+}
+.home h2 {
+  color: palegoldenrod;
+  font-weight: 700;
+}
+
+.home .myl-name {
+  color: saddlebrown;
+  font-weight: 700;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: saddlebrown;
+}
+
+.social-icons li {
+  list-style: none;
+}
+a img {
+  width: 40px;
+  height: 20px;
+  margin-bottom: 0;
+}
+.footer-home {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  color: burlywood;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  right: 0%;
+}
+
+/* About section */
+
+.about-me {
+  padding-bottom: 1rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("IMG_1842.JPG") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  margin: 0, 0, 5rem, 0;
+}
+
+h6 {
+  margin: 1rem;
+  font-size: 20px;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.text {
+  width: 80%;
+  text-align: center;
+}
+.text p {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.heading {
+  padding: 1rem;
+  font-size: 40px;
+  color: burlywood;
+}
+.self {
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+}
+
+.self p {
+  padding: 1rem;
+  margin-bottom: 0;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.self li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.jobs li {
+  list-style-type: square;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.job1,
+.job2 {
+  background: burlywood;
+  padding: 1rem;
+  border-bottom: 5px solid rgb(61, 33, 1);
+}
+
+.footer .about {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.3rem;
+  color: burlywood;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  right: 0%;
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+/* PROJECT */
+
+.my-project {
+  padding-bottom: 2rem;
+}
+
+.project-image {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("IMG_1842.JPG") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.projects {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.projects-items {
+  width: 60vw;
+  margin: 1rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1rem;
+}
+.projects-item {
+  position: relative;
+  border-bottom: 5px solid gray;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projects-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects:hover {
+  top: 0;
+  opacity: 0.9;
+}
+
+.projecs::after {
+  top: 0;
+  opacity: 0.9;
+}
+
+.projects:hover {
+  color: orange;
+}
+
+/* CONTACT */
+
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("IMG_1842.JPG") center top;
+  background-size: cover;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .home {
+    height: 100vh;
+    padding-top: 30vh;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("IMG_1842.JPG") center top;
+    background-size: cover;
+  }
+
+  .about-me {
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  h2,
+  h3 {
+    font-weight: 400;
+    margin: 0, 0, 5rem, 0;
+  }
+
+  h6 {
+    margin: 1rem;
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    width: 80%;
+    text-align: center;
+  }
+  .text p {
+    font-size: 15px;
+    line-height: 1rem;
+  }
+
+  .heading {
+    padding: 1rem;
+    font-size: 40px;
+    color: burlywood;
+  }
+  .self {
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .self p {
+    padding: 1rem;
+    margin-bottom: 0;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+
+  .self li {
+    list-style-type: none;
+    padding: 0.5rem;
+  }
+
+  .jobs {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .jobs li {
+    list-style-type: square;
+    margin-top: 1rem;
+    font-weight: 400;
+  }
+
+  .job1,
+  .job2 {
+    background: burlywood;
+    padding: 1rem;
+    border-bottom: 5px solid rgb(61, 33, 1);
+  }
+
+  .footer .about {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.3rem;
+    color: burlywood;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    right: 0%;
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  }
+
+  .projects-items {
+    width: 60vw;
+    margin: 1rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+}
